@@ -20,7 +20,7 @@
 
 ## Sample / 示例
 
-(在项目文件夹下打开终端)
+(在项目文件夹下打开python)
 
 ```python
 >>> import HomoNumber
