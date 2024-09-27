@@ -160,8 +160,8 @@ class HomoNumberExpr(object):
 
 if __name__ == '__main__':
     Homo = HomoNumberExpr('114514')
-    with open('1919810CacheTable.json', 'w') as f:
-        Homo.SaveHomoCalcTable(f)
+    #with open('1919810CacheTable.json', 'w') as f:
+    #    Homo.SaveHomoCalcTable(f)
     print('恶臭数字论证器')
     print('一个简易的实现喵~输入exit退出喵~')
     while True:
