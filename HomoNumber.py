@@ -20,7 +20,8 @@ class HomoNumberExpr(object):
         self._num_key_cache_sorted: list[tuple[int, str]] = []
 
         if table_load_fp != None:
-            self.baseOpResultTable = json.load(table_load_fp)
+            self.baseOpResultTable = {int(k):v for k,v in json.load(table_load_fp).items()}
+            self._num_key_cache_sorted = sorted(self.baseOpResultTable.items(), key=lambda item: item[0])
 
         if auto_calc and table_load_fp == None:
             self._coverOpResultTable()
