@@ -158,6 +158,11 @@ class HomoNumberExpr(object):
                 min_cost = abs(num - self._num_key_cache_sorted[i][0])
                 min_index = i
         return min_index
+    
+    def calcHomoNum(self):
+        if len(self._num_key_cache_sorted):
+            self.homoNumCursed = self._num_key_cache_sorted[-1][-1]
+        return self.homoNumCursed
 
 if __name__ == '__main__':
     Homo = HomoNumberExpr('114514')
